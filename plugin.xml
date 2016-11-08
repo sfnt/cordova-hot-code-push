@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin id="cordova-hot-code-push-plugin" version="1.5.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-hot-code-push-plugin" version="1.5.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
   <name>Hot Code Push Plugin</name>
   <description>Cordova plugin to perform code updates on the fly</description>
@@ -90,6 +90,9 @@
     <!-- sources for Network folder -->
     <source-file src="src/ios/Network/HCPFileDownloader.m" target-dir="Network/"/>
     <header-file src="src/ios/Network/HCPFileDownloader.h" target-dir="Network/"/>
+
+    <source-file src="src/ios/Network/HCPDataDownloader.m" target-dir="Network/"/>
+    <header-file src="src/ios/Network/HCPDataDownloader.h" target-dir="Network/"/>
 
     <!-- sources for Storage folder -->
     <source-file src="src/ios/Storage/HCPApplicationConfigStorage.m" target-dir="Storage/"/>

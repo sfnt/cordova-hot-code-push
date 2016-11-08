@@ -45,7 +45,7 @@ class InstallationWorker implements WorkerTask {
      * @param newVersion     version to install
      * @param currentVersion current content version
      */
-    public InstallationWorker(final Context context, final String newVersion, final String currentVersion) {
+    InstallationWorker(final Context context, final String newVersion, final String currentVersion) {
         newReleaseFS = new PluginFilesStructure(context, newVersion);
         currentReleaseFS = new PluginFilesStructure(context, currentVersion);
     }
